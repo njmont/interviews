@@ -1,0 +1,123 @@
+/* line 12, C:/Users/Nathan/Dropbox/Cv/Junior Front-end/Storm_test/css/style.scss */
+.stormButton, #fullscreenHeader button, #modalWindow form button {
+  margin-top: 1em;
+  cursor: pointer;
+  border: none;
+  font-family: 'montserrat', sans-serif;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  font-size: 1em;
+  box-shadow: 1px 2px 1.5px rgba(0, 0, 0, 0.3); }
+
+/* line 24, C:/Users/Nathan/Dropbox/Cv/Junior Front-end/Storm_test/css/style.scss */
+#fullscreenHeader {
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/bg-stormtest.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  text-align: center; }
+  /* line 34, C:/Users/Nathan/Dropbox/Cv/Junior Front-end/Storm_test/css/style.scss */
+  #fullscreenHeader h1 {
+    font-family: 'montserrat', sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    font-size: 1.6em; }
+    @media screen and (min-width: 48em) {
+      /* line 34, C:/Users/Nathan/Dropbox/Cv/Junior Front-end/Storm_test/css/style.scss */
+      #fullscreenHeader h1 {
+        font-size: 2em; } }
+    @media screen and (min-width: 64em) {
+      /* line 34, C:/Users/Nathan/Dropbox/Cv/Junior Front-end/Storm_test/css/style.scss */
+      #fullscreenHeader h1 {
+        font-size: 2.4em; } }
+  /* line 48, C:/Users/Nathan/Dropbox/Cv/Junior Front-end/Storm_test/css/style.scss */
+  #fullscreenHeader button {
+    color: #6DC38C;
+    background: #354A5F; }
+    @media screen and (min-width: 48em) {
+      /* line 48, C:/Users/Nathan/Dropbox/Cv/Junior Front-end/Storm_test/css/style.scss */
+      #fullscreenHeader button {
+        font-size: 1.2em; } }
+    @media screen and (min-width: 64em) {
+      /* line 48, C:/Users/Nathan/Dropbox/Cv/Junior Front-end/Storm_test/css/style.scss */
+      #fullscreenHeader button {
+        font-size: 1.4em; } }
+  /* line 59, C:/Users/Nathan/Dropbox/Cv/Junior Front-end/Storm_test/css/style.scss */
+  #fullscreenHeader .content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 8em 0; }
+
+/* line 66, C:/Users/Nathan/Dropbox/Cv/Junior Front-end/Storm_test/css/style.scss */
+#modalWindow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3); }
+  /* line 73, C:/Users/Nathan/Dropbox/Cv/Junior Front-end/Storm_test/css/style.scss */
+  #modalWindow #closeMenu {
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    z-index: 1000;
+    background: #354A5F;
+    height: 2.5em;
+    width: 2.5em;
+    border-radius: 50px;
+    box-shadow: 2px 3px 1.5px rgba(0, 0, 0, 0.3); }
+    /* line 85, C:/Users/Nathan/Dropbox/Cv/Junior Front-end/Storm_test/css/style.scss */
+    #modalWindow #closeMenu i {
+      padding: 0px;
+      margin: 0px;
+      color: white;
+      font-size: 1.5em; }
+  /* line 92, C:/Users/Nathan/Dropbox/Cv/Junior Front-end/Storm_test/css/style.scss */
+  #modalWindow form {
+    clear: both;
+    display: table;
+    content: " ";
+    background: #354A5F;
+    color: white;
+    width: 15em;
+    height: 11.2em;
+    margin: 0 auto;
+    margin-top: 5em;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3); }
+    /* line 104, C:/Users/Nathan/Dropbox/Cv/Junior Front-end/Storm_test/css/style.scss */
+    #modalWindow form input {
+      font-family: 'montserrat', sans-serif;
+      border-radius: 10px;
+      display: inline-block;
+      height: 1.5em;
+      border: none;
+      background: white;
+      color: #354A5F;
+      width: 80%;
+      margin: 2em auto 0 auto;
+      font-size: 0.7em;
+      padding: 0.6em 0.8em; }
+    /* line 117, C:/Users/Nathan/Dropbox/Cv/Junior Front-end/Storm_test/css/style.scss */
+    #modalWindow form button {
+      background: #E44C40;
+      color: white;
+      margin-top: 0.8em;
+      margin-bottom: 0.8em; }
+    /* line 124, C:/Users/Nathan/Dropbox/Cv/Junior Front-end/Storm_test/css/style.scss */
+    #modalWindow form #warning {
+      color: #E44C40;
+      font-size: 0.6em;
+      margin-bottom: 0em; }
+
+/*# sourceMappingURL=style.css.map */

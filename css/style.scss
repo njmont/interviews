@@ -1,0 +1,130 @@
+$primary: #354A5F;
+$secondary: #E44C40;
+$primaryText: #6F6E6B;
+$secondaryText: #6DC38C;
+
+@mixin clearfix() {
+    clear: both;
+    display: table;
+    content: " ";
+}
+
+.stormButton {
+    margin-top: 1em;
+    cursor: pointer;
+    border: none;
+    font-family: 'montserrat', sans-serif;
+    $buttonSize: 1em;
+    padding: ($buttonSize / 2) $buttonSize;
+    border-radius: 5px;
+    font-size: 1em;
+    box-shadow: 1px 2px 1.5px rgba(0,0,0,0.3);
+        }
+
+#fullscreenHeader {
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/bg-stormtest.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    text-align: center;
+        h1 {
+            font-family: 'montserrat', sans-serif;
+            color: white;
+            text-align: center;
+            margin: 0px;
+            font-size: 1.6em;
+                
+                @media screen and (min-width: 48em) {
+                    font-size: 2em;
+                }
+                @media screen and (min-width: 64em) {
+                     font-size: 2.4em;
+                }
+        }
+        button {
+           @extend .stormButton; 
+           color: $secondaryText;
+           background: $primary;
+                @media screen and (min-width: 48em) {
+                    font-size: 1.2em;
+                }
+                @media screen and (min-width: 64em) {
+                     font-size: 1.4em;
+                }
+        }
+        .content {
+            width: 90%; 
+            margin: 0 auto;
+            padding: 8em 0;
+        }
+}
+
+#modalWindow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.3);
+        #closeMenu {
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            top: 1em;
+            right: 1em;
+            z-index: 1000;
+            background: $primary;
+            height: 2.5em;
+            width: 2.5em;
+            border-radius: 50px;
+            box-shadow: 2px 3px 1.5px rgba(0,0,0,0.3);
+             i {
+                 padding: 0px;
+                 margin: 0px;
+                color: white;
+                font-size: 1.5em;
+             }
+        }
+        form {
+            @include clearfix();
+            background: $primary;
+            color: white;
+            width: 15em;
+            height: 11.2em;
+            margin: 0 auto;
+            margin-top: 5em;
+            display: block;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 2px 3px 5px rgba(0,0,0,0.3);
+            input{
+                font-family: 'montserrat', sans-serif;
+                border-radius: 10px;
+                display: inline-block;
+                height: 1.5em;
+                border: none;
+                background: white;
+                color: $primary;
+                width: 80%;
+                margin: 2em auto 0 auto;
+                font-size: 0.7em;
+                padding: 0.6em 0.8em;
+            }
+            button {
+                @extend .stormButton;
+                background: $secondary;
+                color: white;
+                margin-top: 0.8em;
+                margin-bottom: 0.8em;
+            }
+            #warning {
+                color: $secondary;
+                font-size: 0.6em;
+                margin-bottom: 0em;
+            }
+        }
+}
